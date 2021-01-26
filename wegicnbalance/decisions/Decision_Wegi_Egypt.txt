@@ -1,0 +1,326 @@
+country_decisions = {
+
+	# Anubis
+	Build_Monument1 = {
+		major = yes
+		potential = {
+			religion = kemetism
+			NOT = { has_country_flag = monument1 }
+			}
+		allow = {
+			religion = kemetism
+			treasury = 200
+			NOT = { has_country_flag = monument1 }
+			num_of_owned_provinces_with = {
+				value = 1
+				has_owner_accepted_culture = yes
+				religion = kemetism
+				has_building = temple
+				NOT = { has_province_flag = monument }
+			}
+		}
+
+
+		effect = {
+			random_owned_province = {
+					limit = {
+						has_owner_accepted_culture = yes
+						religion = kemetism
+						has_building = temple
+						NOT = { has_province_flag = monument }
+						}
+					set_province_flag = monument
+					remove_building = temple
+					add_building_construction = {
+						building = monument_anubis
+						cost = 1
+						speed = 1
+						}
+					}
+			set_country_flag = monument1
+			
+		} # effect end
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	# Thot
+	Build_Monument2 = {
+		major = yes
+		potential = {
+			religion = kemetism
+			NOT = { has_country_flag = monument2 }
+			}
+		allow = {
+			religion = kemetism
+			treasury = 400
+			NOT = { has_country_flag = monument2 }
+			num_of_owned_provinces_with = {
+				value = 1
+				has_owner_accepted_culture = yes
+				religion = kemetism
+				NOT = { has_province_flag = monument }
+				has_building = temple
+			}
+		}
+
+
+		effect = {
+			random_owned_province = {
+					limit = {
+						has_owner_accepted_culture = yes
+						religion = kemetism
+						NOT = { has_province_flag = monument }
+						has_building = temple
+						}
+					set_province_flag = monument
+					remove_building = temple
+					add_building_construction = {
+						building = monument_thoth
+						cost = 1
+						speed = 1
+						}
+					}
+			set_country_flag = monument2
+			
+		} # effect end
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Ra
+	Build_Monument3 = {
+		major = yes
+		potential = {
+			religion = kemetism
+			NOT = { has_country_flag = monument3 }
+			}
+		allow = {
+			religion = kemetism
+			treasury = 800
+			NOT = { has_country_flag = monument3 }
+			num_of_owned_provinces_with = {
+				value = 1
+				has_owner_accepted_culture = yes
+				religion = kemetism
+				NOT = { has_province_flag = monument }
+				has_building = temple
+			}
+		}
+
+
+		effect = {
+			random_owned_province = {
+					limit = {
+						has_owner_accepted_culture = yes
+						religion = kemetism
+						NOT = { has_province_flag = monument }
+						has_building = temple
+						}
+					set_province_flag = monument
+					remove_building = temple
+					add_building_construction = {
+						building = monument_ra
+						cost = 1
+						speed = 1
+						}
+					}
+			set_country_flag = monument3
+			
+		} # effect end
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Seth
+	Build_Monument4 = {
+		major = yes
+		potential = {
+			religion = kemetism
+			NOT = { has_country_flag = monument4 }
+			}
+		allow = {
+			religion = kemetism
+			treasury = 1600
+			NOT = { has_country_flag = monument4 }
+			num_of_owned_provinces_with = {
+				value = 1
+				has_owner_accepted_culture = yes
+				religion = kemetism
+				NOT = { has_province_flag = monument }
+				has_building = temple
+			}
+		}
+
+
+		effect = {
+			random_owned_province = {
+					limit = {
+						has_owner_accepted_culture = yes
+						religion = kemetism
+						NOT = { has_province_flag = monument }
+						has_building = temple
+						}
+					set_province_flag = monument
+					remove_building = temple
+					add_building_construction = {
+						building = monument_seth
+						cost = 1
+						speed = 1
+						}
+					}
+			set_country_flag = monument4
+			
+		} # effect end
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Bastet
+	Build_Monument5 = {
+		major = yes
+		potential = {
+			religion = kemetism
+			NOT = { has_country_flag = monument5 }
+			}
+		allow = {
+			religion = kemetism
+			treasury = 3200
+			NOT = { has_country_flag = monument5 }
+			num_of_owned_provinces_with = {
+				value = 1
+				has_owner_accepted_culture = yes
+				religion = kemetism
+				NOT = { has_province_flag = monument }
+				has_building = temple
+			}
+		}
+
+
+		effect = {
+			random_owned_province = {
+					limit = {
+						has_owner_accepted_culture = yes
+						religion = kemetism
+						NOT = { has_province_flag = monument }
+						has_building = temple
+						}
+					set_province_flag = monument
+					remove_building = temple
+					add_building_construction = {
+						building = monument_bastet
+						cost = 1
+						speed = 1
+						}
+					}
+			set_country_flag = monument5
+			
+		} # effect end
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Sekhmet
+	Build_Monument6 = {
+		major = yes
+		potential = {
+			religion = kemetism
+			NOT = { has_country_flag = monument6 }
+			}
+		allow = {
+			religion = kemetism
+			treasury = 6400
+			NOT = { has_country_flag = monument6 }
+			num_of_owned_provinces_with = {
+				value = 1
+				has_owner_accepted_culture = yes
+				religion = kemetism
+				NOT = { has_province_flag = monument }
+				has_building = temple
+			}
+		}
+
+
+		effect = {
+			random_owned_province = {
+					limit = {
+						has_owner_accepted_culture = yes
+						religion = kemetism
+						NOT = { has_province_flag = monument }
+						has_building = temple
+						}
+					set_province_flag = monument
+					remove_building = temple
+					add_building_construction = {
+						building = monument_sekhmet
+						cost = 1
+						speed = 1
+						}
+					}
+			set_country_flag = monument6
+			
+		} # effect end
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Osiris
+	Build_Monument7 = {
+		major = yes
+		potential = {
+			religion = kemetism
+			NOT = { has_country_flag = monument7 }
+			}
+		allow = {
+			religion = kemetism
+			treasury = 12800
+			NOT = { has_country_flag = monument7 }
+			num_of_owned_provinces_with = {
+				value = 1
+				has_owner_accepted_culture = yes
+				religion = kemetism
+				NOT = { has_province_flag = monument }
+				has_building = temple
+			}
+		}
+
+
+		effect = {
+			random_owned_province = {
+					limit = {
+						has_owner_accepted_culture = yes
+						religion = kemetism
+						NOT = { has_province_flag = monument }
+						has_building = temple
+						}
+					set_province_flag = monument
+					remove_building = temple
+					add_building_construction = {
+						building = monument_osiris
+						cost = 1
+						speed = 1
+						}
+					}
+			set_country_flag = monument7
+			
+		} # effect end
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

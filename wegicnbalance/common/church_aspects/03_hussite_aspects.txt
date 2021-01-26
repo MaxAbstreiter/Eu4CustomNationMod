@@ -1,0 +1,79 @@
+clerical_poverty_aspect = {
+	cost = 200
+	modifier = {
+		church_influence_modifier = -0.3
+		shock_damage_received = -0.075
+	}
+}
+
+punishment_of_sins_aspect = {
+	cost = 200
+	modifier = {
+		discipline = 0.0333
+		yearly_corruption = -0.2
+	}
+}
+
+orphan_hetmans_aspect = {
+	cost = 200
+	modifier = {
+		fire_damage_received = -0.10
+
+	}
+}
+
+bread_and_wine_aspect = {
+	cost = 200
+	modifier = {
+		land_morale = 0.075
+		global_trade_goods_size_modifier = 0.075
+	}
+}
+
+sola_scriptura_aspect = {
+	cost = 200
+	modifier = {
+		recover_army_morale_speed = 0.4
+	}
+}
+
+adamite_services_aspect = {
+	cost = 200
+	modifier = {
+		infantry_power = 0.15
+	}
+}
+
+pacifism_aspect = {
+	cost = 200
+	modifier = {
+		stability_cost_to_declare_war = 1
+		diplomatic_reputation = 3
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+regular_defenestrations_aspect = {
+	cost = 200
+	modifier = {
+		harsh_treatment_cost = -0.33
+		naval_morale = 0.075
+	}
+}
+
+taborite_resurgence_aspect = {
+	cost = 200
+	modifier = {
+		global_manpower_modifier = 0.25
+	}
+}
+
+freedom_to_preach_aspect = {
+	cost = 200
+	modifier = {
+		free_leader_pool = 3
+		tolerance_heretic = 3
+	}
+}

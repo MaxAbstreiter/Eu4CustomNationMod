@@ -1,0 +1,31 @@
+########################################
+# Events for D00 (startup)
+#
+# written by WEGI
+########################################
+
+namespace = startup_events
+
+#Randomize Religions?
+country_event = {
+	id = startup_event.1
+	title = startup_event.1.t
+	desc = startup_event.1.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Normal
+		name = startup_event.1.a
+		ai_chance = { 
+				factor = 1
+		}	
+	}
+	option = {	# Randomize Religions
+		name = startup_event.1.b	
+		set_global_flag = wegi_randomize_countries
+		ai_chance = { 
+				factor = 0
+		}	
+	}
+}

@@ -1,0 +1,71 @@
+jewish_rabbinic = {
+    icon = GFX_holy_order_jewish_rabbinic
+    trigger = {
+        	religion = jewish
+    }
+    cost = 100
+    cost_type = adm_power
+    per_province_effect = {
+      	add_base_tax = 2
+	add_base_production = 1
+    }
+    per_province_abandon_effect = {
+        	add_base_tax = -2
+	add_base_production = -1
+    }
+    modifier = {
+	local_development_cost = -0.1
+       	local_build_cost = -0.20
+    }
+    ai_priority = {
+        factor = 1
+    }
+}
+
+jewish_karaite = {
+    icon = GFX_holy_order_jewish_karaite
+    trigger = {
+       	religion = jewish
+    }
+    cost = 100
+    cost_type = dip_power
+    per_province_effect = {
+        	add_base_production = 2
+	add_base_manpower = 1
+    }
+    per_province_abandon_effect = {
+        	add_base_production = -2
+	 add_base_manpower = -1
+    }
+    modifier = {
+	local_culture_conversion_cost = -0.25
+	local_production_efficiency = 0.15
+    }
+    ai_priority = {
+        factor = 1
+    }
+}
+
+jewish_samaritan = {
+    icon = GFX_holy_order_jewish_samaritan
+    trigger = {
+        	religion = jewish
+    }
+    cost = 100
+    cost_type = mil_power
+    per_province_effect = {
+        	add_base_manpower = 2
+	add_base_tax = 1
+    }
+    per_province_abandon_effect = {
+       	add_base_manpower = -2
+	add_base_tax = -1
+    }
+    modifier = {
+        	local_unrest = -4
+        	local_missionary_strength = 0.03
+    }
+    ai_priority = {
+        factor = 1
+    }
+}

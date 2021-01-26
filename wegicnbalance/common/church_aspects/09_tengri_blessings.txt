@@ -1,0 +1,64 @@
+tengri_b1 = {
+	is_blessing = yes
+
+	modifier = {
+		horde_unity = 0.5
+		land_morale = 0.10
+		prestige = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+tengri_b2 = {
+	is_blessing = yes
+
+	modifier = {
+		horde_unity = 0.5
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+tengri_b3 = {
+	is_blessing = yes
+
+	modifier = {
+		horde_unity = 0.5
+		diplomatic_upkeep = 1
+		global_tax_modifier = 0.10
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+tengri_b4 = {
+	is_blessing = yes
+
+	modifier = {
+		horde_unity = 0.5
+		shock_damage_received = -0.05
+		fire_damage_received = -0.05
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+tengri_b5 = {
+	is_blessing = yes
+
+	modifier = {
+		horde_unity = 0.5
+		land_forcelimit_modifier = 0.20
+		movement_speed = 0.15
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

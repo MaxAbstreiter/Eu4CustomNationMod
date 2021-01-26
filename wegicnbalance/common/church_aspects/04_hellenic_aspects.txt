@@ -1,0 +1,78 @@
+dionysus_aspect = { #  Wine n Grain
+	sprite = "GFX_hellenic_dionysus"
+	cost = 75
+	effect = {
+		add_years_of_income = 0.1
+		add_prestige = 15
+		}
+	ai_will_do = {
+		factor = 2
+		}
+}
+
+ares_aspect = {
+	sprite = "GFX_hellenic_ares"
+	cost = 75
+
+	effect = {
+		add_army_tradition = 20
+		add_army_professionalism = 0.01
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+poseidon_aspect = {
+	sprite = "GFX_hellenic_poseidon"
+	cost = 125
+	effect = {
+		create_admiral = { tradition = 75 }
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+hades_aspect = {
+	sprite = "GFX_hellenic_hades"
+	cost = 100
+	effect = {
+		add_yearly_manpower = 3
+		kill_ruler = yes
+		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+zeus_aspect = {
+	sprite = "GFX_hellenic_zeus"
+	cost = 100
+	effect = {
+		capital_scope = {
+			add_scaled_local_adm_power = 3
+    			add_scaled_local_dip_power = 3
+			add_scaled_local_mil_power = 3
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+hermes_aspect = {
+	sprite = "GFX_hellenic_hermes"
+	cost = 50
+	effect = {
+		capital_scope = {
+    			ROOT = {
+        				cossack_cavalry = PREV
+    				}
+			}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

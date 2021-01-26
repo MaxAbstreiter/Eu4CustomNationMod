@@ -1,0 +1,314 @@
+country_decisions = {
+
+	RandomizeReligion = {
+		major = yes
+		potential = {
+			ai = yes
+			NOT = { has_country_flag = changedReligion }
+			NOT = { tag = PAP }
+			NOT = { is_year = 1445 } #don't randomize after 1444
+			NOT = { is_playing_custom_nation = yes  }
+			NOT = { is_part_of_hre = yes }
+			has_global_flag = wegi_randomize_countries
+			}
+		allow = {
+			ai = yes
+			NOT = { has_country_flag = changedReligion }
+			NOT = { religion = coptic } #keep any conqured coptic sites
+		}
+
+
+		effect = {
+			set_country_flag = changedReligion
+			random_list = { ### Needs 100 overall
+			3 = { change_religion = catholic set_country_flag = ca }
+			3 = { change_religion = protestant set_country_flag = pr }
+			3 = { change_religion = reformed set_country_flag = re }
+			3 = { change_religion = orthodox set_country_flag = or }
+			3 = { change_religion = coptic set_country_flag = co }
+			3 = { change_religion = sunni set_country_flag = su }
+			3 = { change_religion = shiite set_country_flag = sh }
+			3 = { change_religion = ibadi set_country_flag = ib }
+			3 = { change_religion = hinduism set_country_flag = hi }
+			3 = { change_religion = sikhism set_country_flag = si }
+			3 = { change_religion = animism set_country_flag = an }
+			3 = { change_religion = shamanism set_country_flag = sm }
+			3 = { change_religion = totemism set_country_flag = to }
+			3 = { change_religion = inti set_country_flag = in }
+			3 = { change_religion = nahuatl set_country_flag = na }
+			3 = { change_religion = mesoamerican_religion set_country_flag = me }
+			3 = { change_religion = norse_pagan_reformed set_country_flag = no }
+			3 = { change_religion = tengri_pagan_reformed set_country_flag = te }
+			3 = { change_religion = jewish set_country_flag = je }
+			3 = { change_religion = zoroastrian set_country_flag = zo }
+			3 = { change_religion = confucianism set_country_flag = cn }
+			3 = { change_religion = shinto set_country_flag = st }
+			3 = { change_religion = mahayana set_country_flag = mh }
+			3 = { change_religion = buddhism set_country_flag = bd }
+			3 = { change_religion = vajrayana set_country_flag = vj }
+			# 75, below missing Christ Religions
+			3 = { change_religion = anglican set_country_flag = ang }
+			3 = { change_religion = hussite set_country_flag = hus }
+			# 81, below new religions
+			2 = { change_religion = hellenic set_country_flag = hel }
+			2 = { change_religion = celtic set_country_flag = cel }
+			2 = { change_religion = roman set_country_flag = rmn }
+			2 = { change_religion = kemetism set_country_flag = kem }
+			# 89
+			2 = { change_religion = romuva set_country_flag = rva }
+			2 = { change_religion = slavic set_country_flag = sla }
+			2 = { change_religion = suomenusko set_country_flag = suo}
+			2 = { change_religion = germanic set_country_flag = gmc}
+			}
+			
+			every_owned_province = {
+			limit = {
+				is_state = yes
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = ca }
+				}
+				change_religion = catholic
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = pr }
+				}
+				change_religion = protestant
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = re }
+				}
+				change_religion = reformed
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = or }
+				}
+				change_religion = orthodox
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = co }
+				}
+				change_religion = coptic
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = su }
+				}
+				change_religion = sunni
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = sh }
+				}
+				change_religion = shiite
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = ib }
+				}
+				change_religion = ibadi
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = hi }
+				}
+				change_religion = hinduism
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = si }
+				}
+				change_religion = sikhism
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = an }
+				}
+				change_religion = animism
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = to }
+				}
+				change_religion = totemism
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = sm }
+				}
+				change_religion = shamanism
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = na }
+				}
+				change_religion = nahuatl
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = in }
+				}
+				change_religion = inti
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = me }
+				}
+				change_religion = mesoamerican_religion
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = te }
+				}
+				change_religion = tengri_pagan_reformed 
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = no }
+				}
+				change_religion = norse_pagan_reformed 
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = je }
+				}
+				change_religion = jewish
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = zo }
+				}
+				change_religion = zoroastrian
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = cn }
+				}
+				change_religion = confucianism
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = st }
+				}
+				change_religion = shinto
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = mh }
+				}
+				change_religion = mahayana
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = bd }
+				}
+				change_religion = buddhism
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = vj }
+				}
+				change_religion = vajrayana
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = ang }
+				}
+				change_religion = anglican
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = hus }
+				}
+				change_religion = hussite
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = hel }
+				}
+				change_religion = hellenic
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = cel }
+				}
+				change_religion = celtic
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = rmn }
+				}
+				change_religion = roman
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = kem }
+				}
+				change_religion = kemetism
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = rva }
+				}
+				change_religion = romuva
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = sla }
+				}
+				change_religion = slavic
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = suo }
+				}
+				change_religion = suomenusko
+			}
+			if = {
+				limit = {
+					owner = { has_country_flag = gmc }
+				}
+				change_religion = germanic
+			}
+		}
+
+
+		} # effect end
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+country_decisions = {
+
+	PopeCatholic = {
+		major = yes
+		potential = {
+			ai = yes
+			NOT = { has_country_flag = changedReligion }
+			tag = PAP
+			NOT = { is_year = 1445 } #don't randomize after 1444
+			}
+		allow = {
+			ai = yes
+			NOT = { has_country_flag = changedReligion }
+		}
+
+
+		effect = {
+			set_country_flag = changedReligion
+			change_religion = catholic
+		} # effect end
+		
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}

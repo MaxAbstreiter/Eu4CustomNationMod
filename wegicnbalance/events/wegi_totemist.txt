@@ -1,0 +1,656 @@
+################################################################
+#### wegi
+################################################################
+
+namespace = totemist_events
+
+country_event = {
+
+	id = totemist_ruler_death.1
+	title = totemist_ruler_death.1_t
+	desc = totemist_ruler_death.1_d
+	
+	picture = CITY_DEVELOPMENT_eventPicture
+		
+	
+	is_triggered_only = yes
+
+	option = { #Do Nothing - Which Ruler
+		name = "totemist_ruler_death.1.1"
+
+			add_adm_power = 50
+
+			ai_chance = { 
+				factor = 1
+				}	
+		}
+	option = { #Just
+		name = "totemist_ruler_death.1.2"
+		trigger = {
+			ruler_has_personality = just_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_just
+    				duration = -1  
+    				desc = totemist_ruler_just_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #Righteous
+		name = "totemist_ruler_death.1.3"
+		trigger = {
+			ruler_has_personality = righteous_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_righteous
+    				duration = -1  
+    				desc = totemist_ruler_righteous_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #tolerant
+		name = "totemist_ruler_death.1.4"
+		trigger = {
+			ruler_has_personality = tolerant_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_tolerant
+    				duration = -1  
+    				desc = totemist_ruler_tolerant_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #kind_hearted
+		name = "totemist_ruler_death.1.5"
+		trigger = {
+			ruler_has_personality = kind_hearted_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_kind_hearted
+    				duration = -1  
+    				desc = totemist_ruler_kind_hearted_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #free_thinker
+		name = "totemist_ruler_death.1.6"
+		trigger = {
+			ruler_has_personality = free_thinker_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_free_thinker
+    				duration = -1  
+    				desc = totemist_ruler_free_thinker_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+
+	option = { #well_connected
+		name = "totemist_ruler_death.1.7"
+		trigger = {
+			ruler_has_personality = well_connected_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_well_connected
+    				duration = -1  
+    				desc = totemist_ruler_well_connected_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+
+	option = { #calm
+		name = "totemist_ruler_death.1.8"
+		trigger = {
+			ruler_has_personality = calm_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_calm
+    				duration = -1  
+    				desc = totemist_ruler_calm_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #careful
+		name = "totemist_ruler_death.1.9"
+		trigger = {
+			ruler_has_personality = careful_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_careful
+    				duration = -1  
+    				desc = totemist_ruler_careful_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #secretive
+		name = "totemist_ruler_death.1.10"
+		trigger = {
+			ruler_has_personality = secretive_personality
+			}
+			
+		add_dip_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_secretive
+    				duration = -1  
+    				desc = totemist_ruler_secretive_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #web_weaver
+		name = "totemist_ruler_death.1.11"
+		trigger = {
+			ruler_has_personality = intricate_web_weaver_personality
+			}
+			
+		add_dip_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_intricate_web_weaver
+    				duration = -1  
+    				desc = totemist_ruler_intricate_web_weaver_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #fertile
+		name = "totemist_ruler_death.1.12"
+		trigger = {
+			ruler_has_personality = fertile_personality
+			}
+			
+		add_adm_power = -25
+		add_country_modifier = { 
+    				name = totemist_ruler_fertile
+    				duration = -1  
+    				desc = totemist_ruler_fertile_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #well adviced
+		name = "totemist_ruler_death.1.13"
+		trigger = {
+			ruler_has_personality = well_advised_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_well_advised
+    				duration = -1  
+    				desc = totemist_ruler_well_advised_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #benevolent
+		name = "totemist_ruler_death.1.14"
+		trigger = {
+			ruler_has_personality = well_advised_personality
+			}
+			
+		add_dip_power = -25
+		add_country_modifier = { 
+    				name = totemist_ruler_benevolent
+    				duration = -1  
+    				desc = totemist_ruler_benevolent_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #zealot
+		name = "totemist_ruler_death.1.15"
+		trigger = {
+			ruler_has_personality = zealot_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_zealot
+    				duration = -1  
+    				desc = totemist_ruler_zealot_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #pious
+		name = "totemist_ruler_death.1.16"
+		trigger = {
+			ruler_has_personality = pious_personality
+			}
+			
+		add_adm_power = -25
+		add_country_modifier = { 
+    				name = totemist_ruler_pious
+    				duration = -1  
+    				desc = totemist_ruler_pious_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #lawgiver
+		name = "totemist_ruler_death.1.17"
+		trigger = {
+			ruler_has_personality = lawgiver_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_lawgiver
+    				duration = -1  
+    				desc = totemist_ruler_lawgiver_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #midas touched
+		name = "totemist_ruler_death.1.18"
+		trigger = {
+			ruler_has_personality = midas_touched_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_midas_touched
+    				duration = -1  
+    				desc = totemist_ruler_midas_touched_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #incorruptible
+		name = "totemist_ruler_death.1.19"
+		trigger = {
+			ruler_has_personality = incorruptible_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_incorruptible
+    				duration = -1  
+    				desc = totemist_ruler_incorruptible_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #architectural_visionary
+		name = "totemist_ruler_death.1.20"
+		trigger = {
+			ruler_has_personality = architectural_visionary_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_architectural_visionary
+    				duration = -1  
+    				desc = totemist_ruler_architectural_visionary_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #scholar
+		name = "totemist_ruler_death.1.21"
+		trigger = {
+			ruler_has_personality = scholar_personality
+			}
+			
+		add_adm_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_scholar
+    				duration = -1  
+    				desc = totemist_ruler_scholar_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #entrepreneur
+		name = "totemist_ruler_death.1.22"
+		trigger = {
+			ruler_has_personality = entrepreneur_personality
+			}
+			
+		add_dip_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_entrepreneur
+    				duration = -1  
+    				desc = totemist_ruler_entrepreneur_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #industrious
+		name = "totemist_ruler_death.1.23"
+		trigger = {
+			ruler_has_personality = industrious_personality
+			}
+			
+		add_dip_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_industrious
+    				duration = -1  
+    				desc = totemist_ruler_industrious_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #expansionist
+		name = "totemist_ruler_death.1.24"
+		trigger = {
+			ruler_has_personality = expansionist_personality
+			}
+			
+		add_dip_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_expansionist
+    				duration = -1  
+    				desc = totemist_ruler_expansionist_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #charismatic_negotiator
+		name = "totemist_ruler_death.1.25"
+		trigger = {
+			ruler_has_personality = charismatic_negotiator_personality
+			}
+			
+		add_dip_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_charismatic_negotiator
+    				duration = -1  
+    				desc = totemist_ruler_charismatic_negotiator_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #silver_tongue
+		name = "totemist_ruler_death.1.26"
+		trigger = {
+			ruler_has_personality = silver_tongue_personality
+			}
+			
+		add_dip_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_silver_tongue
+    				duration = -1  
+    				desc = totemist_ruler_silver_tongue_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #conqueror
+		name = "totemist_ruler_death.1.27"
+		trigger = {
+			ruler_has_personality = conqueror_personality
+			}
+			
+		add_mil_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_conqueror
+    				duration = -1  
+    				desc = totemist_ruler_conqueror_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #tactical_genius
+		name = "totemist_ruler_death.1.28"
+		trigger = {
+			ruler_has_personality = tactical_genius_personality
+			}
+			
+		add_mil_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_tactical_genius
+    				duration = -1  
+    				desc = totemist_ruler_tactical_genius_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #bold_fighter
+		name = "totemist_ruler_death.1.29"
+		trigger = {
+			ruler_has_personality = bold_fighter_personality
+			}
+			
+		add_mil_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_bold_fighter
+    				duration = -1  
+    				desc = totemist_ruler_bold_fighter_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #strict
+		name = "totemist_ruler_death.1.30"
+		trigger = {
+			ruler_has_personality = strict_personality
+			}
+			
+		add_mil_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_strict
+    				duration = -1  
+    				desc = totemist_ruler_strict_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #inspiring leader
+		name = "totemist_ruler_death.1.31"
+		trigger = {
+			ruler_has_personality = inspiring_leader_personality
+			}
+			
+		add_mil_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_inspiring_leader
+    				duration = -1  
+    				desc = totemist_ruler_inspiring_leader_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #martial_educator
+		name = "totemist_ruler_death.1.32"
+		trigger = {
+			ruler_has_personality = martial_educator_personality
+			}
+			
+		add_mil_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_martial_educator
+    				duration = -1  
+    				desc = totemist_ruler_martial_educator_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #fierce_negotiator
+		name = "totemist_ruler_death.1.33"
+		trigger = {
+			ruler_has_personality = fierce_negotiator
+			}
+			
+		add_mil_power = -50
+		add_country_modifier = { 
+    				name = totemist_ruler_fierce_negotiator
+    				duration = -1  
+    				desc = totemist_ruler_fierce_negotiator_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+	option = { #humane
+		name = "totemist_ruler_death.1.34"
+		trigger = {
+			ruler_has_personality = fierce_negotiator
+			}
+			
+		add_adm_power = -75
+		add_country_modifier = { 
+    				name = totemist_ruler_humane
+    				duration = -1  
+    				desc = totemist_ruler_humane_desc
+    				hidden = no
+				}
+
+		ai_chance = { 
+			factor = 1
+			}	
+
+		}
+}

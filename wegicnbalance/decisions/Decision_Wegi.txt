@@ -1,0 +1,85 @@
+country_decisions = {
+
+	# Gives Cardinal, its something I guess
+	ActivatePapal = {
+		major = yes
+		potential = {
+			has_reform = papacy_reform
+			NOT = { has_country_flag = activated_papa }
+			}
+		allow = {
+			religion = catholic
+			has_reform = papacy_reform
+			NOT = { has_country_flag = activated_papa }
+		}
+
+
+		effect = {
+			add_papal_influence = 30
+			random_owned_province = {
+					limit = {
+						is_capital = yes
+						}
+					add_cardinal = yes }
+
+			set_country_flag = activated_papa
+			set_papacy_active = yes
+			papal_tag = ROOT
+			
+		} # effect end
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# First Player with Celestial Reform can claim Mandate from the random Chinese province.
+	SetMandate = {
+		major = yes
+		potential = {
+			has_reform = celestial_empire
+			NOT = { has_global_flag = mandateViaDecision }
+			}
+		allow = {
+			has_reform = celestial_empire
+			NOT = { has_global_flag = mandateViaDecision }
+		}
+
+
+		effect = {
+			set_emperor_of_china = ROOT
+			set_meritocracy = 100
+			set_mandate = 60
+			set_global_flag = mandateViaDecision
+			
+		} # effect end
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# Add Fervor
+	FervorBoost = {
+		major = yes
+		potential = {
+			religion = reformed
+			}
+		allow = {
+			religion = reformed
+			years_of_income = 1.0
+			NOT = { fervor = 76 }
+		}
+
+
+		effect = {
+			add_fervor = 25
+			add_years_of_income = -1
+			
+		} # effect end
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

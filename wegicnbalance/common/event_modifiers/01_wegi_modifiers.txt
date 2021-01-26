@@ -1,0 +1,105 @@
+### Totemist Ruler Traits to add
+
+totemist_ruler_just = {
+	global_unrest = -2
+}
+
+totemist_ruler_righteous = {
+	legitimacy = 0.5
+	republican_tradition = 0.25
+}
+
+totemist_ruler_tolerant = {
+	tolerance_heretic = 1
+	tolerance_heathen = 1
+}
+totemist_ruler_kind_hearted = {
+	war_exhaustion = -0.05
+}
+totemist_ruler_free_thinker = {
+	idea_cost = -0.05
+}
+totemist_ruler_well_connected = {
+	advisor_cost = -0.1
+}
+totemist_ruler_calm = {
+	stability_cost_modifier = -0.10
+}
+totemist_ruler_careful = {
+	ae_impact = -0.10
+}
+totemist_ruler_secretive = {
+	global_spy_defence = 0.2
+}
+totemist_ruler_intricate_web_weaver = {
+	spy_offence = 0.3
+}
+totemist_ruler_fertile = {
+	heir_chance = 0.5
+}
+totemist_ruler_well_advised = {
+	advisor_pool = 1
+}
+totemist_ruler_benevolent = {
+	reduced_liberty_desire = 5
+}
+totemist_ruler_zealot = {
+	global_missionary_strength = 0.01
+}
+totemist_ruler_pious = {
+	devotion = 0.5
+}
+totemist_ruler_lawgiver = {
+	global_autonomy = -0.05
+}
+totemist_ruler_midas_touched = {
+	global_tax_modifier = 0.1
+}
+totemist_ruler_incorruptible = {
+	yearly_corruption = -0.05
+}
+totemist_ruler_architectural_visionary= {
+	build_cost = -0.1
+}
+totemist_ruler_scholar = {
+	technology_cost = -0.05
+}
+totemist_ruler_entrepreneur = {
+	trade_efficiency = 0.1
+}
+totemist_ruler_industrious = {
+	global_trade_goods_size_modifier = 0.1
+}
+totemist_ruler_charismatic_negotiator = {
+	diplomatic_reputation = 1
+}
+totemist_ruler_silver_tongue = {
+	improve_relation_modifier = 0.2
+}
+totemist_ruler_conqueror = {
+	years_of_nationalism = -5
+}
+totemist_ruler_tactical_genius = {
+	leader_land_manuever = 1
+}
+totemist_ruler_bold_fighter = {
+	leader_land_shock = 1
+}
+totemist_ruler_strict = {
+	discipline = 0.0333
+}
+totemist_ruler_inspiring_leader = {
+	land_morale = 0.05
+}
+totemist_ruler_martial_educator = {
+	army_tradition_decay = -0.01
+}
+totemist_ruler_navigator = {
+	ship_durability = 0.1
+}
+totemist_ruler_fierce_negotiator = {
+	merc_maintenance_modifier = -0.125
+}
+totemist_ruler_humane = {
+	imperial_mandate = 0.05
+}

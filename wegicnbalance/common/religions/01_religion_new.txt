@@ -1,0 +1,255 @@
+
+hellenic_group = {
+	defender_of_faith = yes
+	center_of_religion = 146
+	flag_emblem_index_range = { 110 110 }
+	hellenic = { # Greec Good
+		icon = 29
+		color = { 255 75 25 }
+		province = {
+			
+		}
+		country = {
+			production_efficiency = 0.25
+			build_cost = -0.20
+		}
+		country_as_secondary = {
+			production_efficiency = 0.25
+			build_cost = -0.20
+			cavalry_fire = 0.5
+			cavalry_cost = -0.25
+		}
+		uses_anglican_power = yes
+		aspects = {
+			dionysus_aspect
+			ares_aspect
+			poseidon_aspect
+			hades_aspect
+			zeus_aspect
+			hermes_aspect
+		}
+
+		heretic = { }	
+	}
+	roman = { # Roman Pantheon
+		icon = 30
+		color = { 235 52 52 }
+		province = {
+			
+		}
+		country = {
+			yearly_army_professionalism = 0.01
+			drill_gain_modifier = 1
+		}
+		country_as_secondary = {
+			yearly_army_professionalism = 0.01
+			drill_gain_modifier = 1
+			cavalry_fire = 0.5
+			cavalry_cost = -0.25
+		}
+		uses_church_power = yes
+		aspects = {
+			mars_aspect
+			pluto_aspect
+			jupiter_aspect
+			neptune_aspect
+			juno_aspect
+			ceres_aspect
+			minerva_aspect
+		}
+		
+		misguided_heretic = yes
+		heretic = { SNAKE_CLAN }
+			
+	}
+
+
+	harmonized_modifier = harmonized_old_religions_group
+
+	crusade_name = HOLY_WAR
+	
+}
+
+kemetic_group = {
+	defender_of_faith = yes
+	center_of_religion = 500
+	flag_emblem_index_range = { 110 110 }
+
+	kemetism = { #Ancient Egyptian
+		icon = 32
+		color = { 250 220 200 }
+		country = {
+			development_cost = -0.1
+			dip_tech_cost_modifier = -0.15
+		}
+		country_as_secondary = {
+			development_cost = -0.1
+			dip_tech_cost_modifier = -0.15
+			cavalry_fire = 0.5
+			cavalry_cost = -0.25
+		}
+		heretic = { SNAKE_CLAN }
+	}
+	
+	harmonized_modifier = harmonized_old_religions_group
+
+	crusade_name = HOLY_WAR
+
+}
+
+
+european_pagan_group = {
+	defender_of_faith = yes
+	flag_emblem_index_range = { 110 110 }
+
+	celtic = { # WegiMod
+		icon = 31
+		color = { 235 200 50 }
+		province = {
+			
+		}
+		country = {
+			army_tradition = 1
+			army_tradition_from_battle = 0.75
+		}
+		country_as_secondary = {
+			army_tradition = 1
+			army_tradition_from_battle = 0.75
+			cavalry_fire = 0.5
+			cavalry_cost = -0.25
+		}
+		personal_deity = yes
+		#Toutatis - Protector
+		#Belenus - sun, also horse?
+		#Epona - Cav
+		#Taranis - Thunder n Wheel
+		#Esus - Trade n Travel
+		#Moccus - Hunt
+		heretic = { SNAKE_CLAN  }	
+	}
+
+	norse_pagan_reformed = {
+		icon = 21
+		color = { 191 191 191 }
+		country = {
+			allowed_marine_fraction = 0.2
+			infantry_power = 0.20
+		}
+		country_as_secondary = {
+			allowed_marine_fraction = 0.2
+			infantry_power = 0.20
+			cavalry_fire = 0.5
+			cavalry_cost = -0.25
+		}
+		province = {
+			
+		}
+		
+		personal_deity = yes
+		
+		heretic = { OLD_NORSE }	
+	}
+
+	romuva = { #Baltic -> trade & diplomaty
+		icon = 33
+		color = { 20 150 20 }
+		country = {
+			transfer_trade_power_reasons = 25
+			privateer_efficiency = 0.33
+		}
+		country_as_secondary = {
+			transfer_trade_power_reasons = 25
+			privateer_efficiency = 0.33
+			cavalry_fire = 0.5
+			cavalry_cost = -0.25
+		}
+		personal_deity = yes
+		heretic = { OLD_NORSE }
+	}
+	suomenusko = { #Suomenusko -> defense
+		icon = 34
+		color = { 150 20 20 }
+		country = {
+			global_regiment_recruit_speed = -0.75
+			hostile_attrition = 2.5
+		}
+		country_as_secondary = {
+			global_regiment_recruit_speed = -0.75
+			hostile_attrition = 2.5
+			cavalry_fire = 0.5
+			cavalry_cost = -0.25
+		}
+		heretic = { OLD_NORSE }
+		uses_church_power = yes
+		aspects = {
+			icon_tapio
+			icon_jumi
+			icon_kuu
+			icon_ahti
+			icon_ukko 
+			icon_ilmarinen
+		}
+
+	}
+	slavic = { #Slavic -> administration
+		icon = 35
+		color = { 20 20 150 }
+		uses_church_power = yes
+		country = {
+			administrative_efficiency = 0.25
+			tolerance_heretic = 4
+		}
+		country_as_secondary = {
+			administrative_efficiency = 0.25
+			tolerance_heretic = 4
+			cavalry_fire = 0.5
+			cavalry_cost = -0.25
+		}
+		aspects = {
+			perun_aspect
+			veles_aspect
+			jarilo_aspect
+			svarog_aspect
+			dazbog_aspect
+			lada_aspect
+		}
+		heretic = { OLD_NORSE }
+	}
+
+	germanic = {
+
+		color = { 15 15 45 }
+		icon = 36
+		country = {
+			leader_land_shock = 2
+			free_leader_pool = 2
+		}
+		country_as_secondary = {
+			leader_land_shock = 2
+			free_leader_pool = 2
+			cavalry_fire = 0.5
+			cavalry_cost = -0.25
+		}
+		province = {
+			
+		}
+		
+		heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }
+		
+		holy_sites = { 96 2972 4142 4711 238 }
+		personal deity = yes
+		
+		blessings = {
+			germanic_b1
+			germanic_b2
+			germanic_b3
+			germanic_b4
+			germanic_b5
+		}
+	}
+
+	harmonized_modifier = harmonized_old_religions_group
+
+	crusade_name = HOLY_WAR
+
+}

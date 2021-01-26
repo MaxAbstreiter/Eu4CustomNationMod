@@ -1,0 +1,131 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+ausrine =
+{
+	# Evening star, beauty and youth
+	monarch_lifespan = 1.0
+	improve_relation_modifier = 0.5
+	
+	allow = { religion = romuva }
+	sprite = 25
+	
+	ai_will_do = {
+		factor = 0.8
+		modifier = {
+			factor = 0
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}		
+	}
+}
+
+laima = 
+{ # god of fate, childbirth and death
+	#
+	monarch_lifespan = -0.8
+	country_diplomatic_power = 1
+	
+	allow = { religion = romuva }
+	sprite = 26
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}			
+	}	
+}
+
+peckols =
+{
+	# God of Death
+	diplomatic_reputation = 2
+	reserves_organisation = 0.15
+	
+	allow = { religion = romuva }
+	sprite = 27
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}		
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}			
+	}	
+}
+
+perkunas = 
+{
+	# God of Thunder
+	light_ship_cost = -0.33
+	navy_tradition = 0.5
+	
+	allow = { religion = romuva }
+	sprite = 28
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}			
+	}	
+}
+
+saule = 
+{ 
+	# Sun God
+	dip_advisor_cost = -0.25
+	discipline = 0.025
+	
+	allow = { religion = romuva }
+	sprite = 29
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 4
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}	
+}
+
+zemyna =
+{
+	#fertility and earth
+	defensiveness = 0.20
+	development_cost = -0.1
+	
+	allow = { religion = romuva }
+	sprite = 30
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 6
+			personality = ai_capitalist
+		}		
+	}	
+}
+

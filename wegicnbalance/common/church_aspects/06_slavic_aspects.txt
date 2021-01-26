@@ -1,0 +1,108 @@
+perun_aspect = {
+	sprite = "GFX_slavic_deity_perun"
+	cost = 100
+	modifier = {
+		discipline = 0.033
+		global_colonial_growth = 20
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+	}
+}
+
+veles_aspect = {
+	sprite = "GFX_slavic_deity_veles"
+	cost = 100
+	modifier = {
+		development_cost = -0.1
+		leader_cost = -0.15 
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 2
+			unrest = 4
+			NOT = { stability = 0 }
+		}
+	}
+}
+
+jarilo_aspect = {
+	sprite = "GFX_slavic_deity_jarilo"
+	cost = 100
+	modifier = { 
+		missionary_maintenance_cost = -0.8
+		drill_gain_modifier = 0.40
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					has_owner_religion = no
+				}
+			}
+		}
+	}
+}
+
+svarog_aspect = {
+	sprite = "GFX_slavic_deity_svarog"
+	cost = 100
+	modifier = { 
+		fire_damage = 0.10
+		global_tax_income = 18
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+dazbog_aspect = {
+	sprite = "GFX_slavic_deity_dazbog"
+	cost = 100
+	modifier = { 
+		prestige = 1.5
+		stability_cost_modifier = -0.15
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+lada_aspect = {
+	sprite = "GFX_slavic_deity_lada"
+	cost = 100
+	modifier = {
+		global_manpower_modifier = 0.2
+		global_sailors_modifier = 0.2
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { prestige = -40 }
+		}
+	}
+}

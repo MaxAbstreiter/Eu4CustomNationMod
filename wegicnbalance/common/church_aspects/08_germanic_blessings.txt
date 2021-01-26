@@ -1,0 +1,64 @@
+germanic_b1 = {
+	is_blessing = yes
+
+	modifier = {
+		leader_land_fire = 1
+		cavalry_power = 0.10
+		infantry_cost = -0.10
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+germanic_b2 = {
+	is_blessing = yes
+
+	modifier = {
+		leader_land_manuever = 2
+		allowed_marine_fraction = 0.1
+		naval_maintenance_modifier = -0.2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+germanic_b3 = {
+	is_blessing = yes
+
+	modifier = {
+		leader_siege = 1
+		land_morale = 0.05
+		yearly_corruption = -0.1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+germanic_b4 = {
+	is_blessing = yes
+
+	modifier = {
+		monarch_military_power = 1 
+		leader_cost = -0.15
+		shock_damage = 0.10
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+germanic_b5 = {
+	is_blessing = yes
+
+	modifier = {
+		monarch_admin_power = 1
+		discipline = 0.025
+		leader_naval_shock = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

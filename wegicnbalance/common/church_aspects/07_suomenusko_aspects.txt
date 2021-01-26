@@ -1,0 +1,108 @@
+icon_tapio = {
+	sprite = "GFX_suo_deity_tapio"
+	cost = 100
+	modifier = {
+		reserves_organisation = 0.15
+		movement_speed = 0.15
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+	}
+}
+
+icon_jumi= {
+	sprite = "GFX_suo_deity_jumi"
+	cost = 100
+	modifier = {
+		mercenary_manpower= 0.50
+		reinforce_cost_modifier = -0.50
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 2
+			unrest = 4
+			NOT = { stability = 0 }
+		}
+	}
+}
+
+icon_kuu = {
+	sprite = "GFX_suo_deity_kuu"
+	cost = 100
+	modifier = { 
+		mil_tech_cost_modifier = -0.15
+		rival_border_fort_maintenance = -0.50
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					has_owner_religion = no
+				}
+			}
+		}
+	}
+}
+
+icon_ahti = {
+	sprite = "GFX_suo_deity_ahti"
+	cost = 100
+	modifier = { 
+		global_ship_repair = 0.75
+		own_coast_naval_combat_bonus = 1.0
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+icon_ukko = {
+	sprite = "GFX_suo_deity_ukko"
+	cost = 100
+	modifier = { 
+		army_tradition = 0.75
+		shock_damage_received = -0.10
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+icon_ilmarinen = {
+	sprite = "GFX_suo_deity_ilmarinen"
+	cost = 100
+	modifier = {
+		cavalry_shock = 0.5
+		reinforce_cost_modifier = -0.50
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { prestige = -40 }
+		}
+	}
+}

@@ -1,0 +1,263 @@
+
+monument_anubis = {
+	cost = 200
+	time = 12
+	one_per_country = yes   
+	indestructible = yes
+
+	build_trigger = {
+		owner = { religion = kemetism  }
+	}
+
+	on_built = {
+   		add_base_tax = 1
+		add_base_production = 1
+		add_base_manpower = 1
+		FROM = { add_prestige = 10 }
+    	}
+
+	modifier = {
+		local_development_cost = -0.20
+		years_of_nationalism = -5
+		fort_maintenance_modifier = -0.25
+			
+	}
+	
+	on_destroyed = {
+   		add_base_tax = -1
+		add_base_production = -1
+		add_base_manpower = -1
+		FROM = { add_prestige = -10 }
+   	 }
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+monument_thoth = {
+	cost = 400
+	time = 24
+	one_per_country = yes   
+	indestructible = yes
+
+	build_trigger = {
+		owner = { religion = kemetism  }
+	}
+
+	on_built = {
+   		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
+		FROM = { add_prestige = 15 }
+    	}
+
+	modifier = {
+		local_development_cost = -0.25
+		idea_cost = -0.15
+		technology_cost = -0.10
+		institution_spread_from_true_faith = 0.5
+			
+	}
+	
+	on_destroyed = {
+   		add_base_tax = -2
+		add_base_production = -2
+		add_base_manpower = -2
+		FROM = { add_prestige = -15 }
+   	 }
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+monument_ra = {
+	cost = 800
+	time = 36
+	one_per_country = yes
+	indestructible = yes
+
+	build_trigger = {
+		owner = { religion = kemetism  }
+	}
+
+	modifier = {
+		local_development_cost = -0.3
+		add_prestige = 20
+		republican_tradition = 0.5
+		legitimacy = 2
+		devotion = 2
+		horde_unity = 2
+		meritocracy = 1
+		max_absolutism = 20
+		yearly_absolutism = 1
+		imperial_mandate = 0.1
+			
+	}
+
+	on_built = {
+   		add_base_tax = 3
+		add_base_production = 3
+		add_base_manpower = 3
+		FROM = { add_prestige = 20 }
+    	}
+
+	on_destroyed = {
+   		add_base_tax = -3
+		add_base_production = -3
+		add_base_manpower = -3
+		FROM = { add_prestige = -20 }
+   	 }
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+monument_seth = {
+	cost = 1600
+	time = 48
+	one_per_country = yes
+	indestructible = yes
+
+	build_trigger = {
+		owner = { religion = kemetism  }
+	}
+
+	modifier = {
+		local_development_cost = -0.35
+		hostile_attrition = 2
+		caravan_power = 0.15
+		siege_ability = 0.15	
+	}
+
+	on_built = {
+   		add_base_tax = 4
+		add_base_production = 4
+		add_base_manpower = 4
+		FROM = { add_prestige = 25 }
+    	}
+
+	on_destroyed = {
+   		add_base_tax = -4
+		add_base_production = -4
+		add_base_manpower = -4
+		FROM = { add_prestige = -25 }
+   	 }
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+monument_bastet = {
+	cost = 3200
+	time = 60
+	one_per_country = yes
+	indestructible = yes
+
+	build_trigger = {
+		owner = { religion = kemetism  }
+	}
+
+	modifier = {
+		local_development_cost = -0.40
+		development_cost = -0.1
+		production_efficiency = 0.15
+
+	}
+
+	on_built = {
+   		add_base_tax = 5
+		add_base_production = 5
+		add_base_manpower = 5
+		FROM = { add_prestige = 30 }
+    	}
+
+	on_destroyed = {
+   		add_base_tax = -5
+		add_base_production = -5
+		add_base_manpower = -5
+		FROM = { add_prestige = -30 }
+   	 }
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+monument_sekhmet = {
+	cost = 6400
+	time = 72
+	one_per_country = yes
+	indestructible = yes
+
+	build_trigger = {
+		owner = { religion = kemetism  }
+	}
+
+	modifier = {
+		local_development_cost = -0.50
+		army_tradition_decay = -0.02
+		land_morale = 0.10
+		war_exhaustion = -0.05
+		infantry_power = 0.05
+		cavalry_power = 0.05
+			
+	}
+
+	on_built = {
+   		add_base_tax = 6
+		add_base_production = 6
+		add_base_manpower = 6
+		FROM = { add_prestige = 35 }
+    	}
+
+	on_destroyed = {
+   		add_base_tax = -6
+		add_base_production = -6
+		add_base_manpower = -6
+		FROM = { add_prestige = -35 }
+   	 }
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+monument_osiris = {
+	cost = 12800
+	time = 84
+	one_per_country = yes
+	indestructible = yes
+
+	build_trigger = {
+		owner = { religion = kemetism  }
+	}
+
+	modifier = {
+		local_development_cost = -0.60
+		all_power_cost = -0.05
+		administrative_efficiency = 0.15
+	}
+
+	on_built = {
+   		add_base_tax = 7
+		add_base_production = 7
+		add_base_manpower = 7
+		FROM = { add_prestige = 40 }
+    	}
+
+	on_destroyed = {
+   		add_base_tax = -7
+		add_base_production = -7
+		add_base_manpower = -7
+		FROM = { add_prestige = -40 }
+   	 }
+
+	ai_will_do = {
+		factor = 0
+	}
+}

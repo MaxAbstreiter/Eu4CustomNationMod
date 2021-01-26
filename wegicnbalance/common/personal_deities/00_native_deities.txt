@@ -1,0 +1,130 @@
+# Animist has Military Deities. Totemist uses them for Admin purposes
+
+# cavalry
+bison =
+{
+	allow = { OR = { religion = animism } }
+	sprite = 13
+
+	shock_damage = 0.20
+	fire_damage = -0.10
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+#slower speed but good defensive stats
+crocodile =
+{
+	fire_damage_received = -0.20
+	movement_speed = -0.15
+
+	allow = { OR = { religion = animism } }
+	sprite = 14
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}
+	}
+}
+
+# mighty brawler but expensive and slow to reinforce
+bear =
+{
+	discipline = 0.05
+	land_maintenance_modifier = 0.10 
+	
+	allow = { OR = {  religion = animism } }
+	sprite = 15
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { num_of_cities = 5 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_cities = 10 }
+		}
+		modifier = {
+			factor = 0.5
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}
+}
+# building up & water
+groundhog =
+{
+	global_regiment_cost = -0.25
+	land_morale = -0.05
+
+	allow = { OR = { religion = animism } }
+	sprite = 16
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}		
+	}
+}
+# first strike
+coyote =
+{
+	fire_damage = 0.2
+	shock_damage_received = 0.15
+	
+	allow = { OR = { religion = animism } }
+	sprite = 17
+	
+	ai_will_do = {
+		factor = 1	
+	}
+}
+# strong first strike, weaker shock
+eagle =
+{
+	movement_speed = 0.20
+	defensiveness = -0.20	
+
+	allow = { OR = { religion = animism } }
+	sprite = 18
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}		
+	}
+}

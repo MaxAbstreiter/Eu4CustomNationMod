@@ -1,0 +1,120 @@
+mars_aspect = {
+	sprite = "GFX_roman_mars"
+	cost = 100
+	modifier = {
+		fire_damage = 0.10
+		state_maintenance_modifier = 0.33
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+	}
+}
+
+pluto_aspect = {
+	sprite = "GFX_roman_pluto"
+	cost = 100
+	modifier = {
+		manpower_recovery_speed = 0.25
+		state_maintenance_modifier = 0.33
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 2
+			unrest = 4
+			NOT = { stability = 0 }
+		}
+	}
+}
+
+jupiter_aspect = {
+	sprite = "GFX_roman_jupiter"
+	cost = 100
+	modifier = { 
+		land_morale = 0.15
+		state_maintenance_modifier = 0.33
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					has_owner_religion = no
+				}
+			}
+		}
+	}
+}
+
+neptune_aspect = {
+	sprite = "GFX_roman_neptune"
+	cost = 100
+	modifier = { 
+		sunk_ship_morale_hit_recieved = -0.4
+		state_maintenance_modifier = 0.33
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+juno_aspect = {
+	sprite = "GFX_roman_juno"
+	cost = 100
+	modifier = { 
+		all_power_cost = -0.02
+		state_maintenance_modifier = 0.33
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+ceres_aspect = {
+	sprite = "GFX_roman_ceres"
+	cost = 100
+	modifier = {
+		war_exhaustion = -0.10 
+		state_maintenance_modifier = 0.33
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { prestige = -40 }
+		}
+	}
+}
+
+minerva_aspect = {
+	sprite = "GFX_roman_minerva"
+	cost = 100
+	modifier = {
+		country_military_power = 1
+		state_maintenance_modifier = 0.33
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

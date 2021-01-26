@@ -1,0 +1,32 @@
+country_decisions = {
+
+	# Kills the ruler when he ruled over 25 years
+	Totemist_Ruler_Sac = {
+		major = yes
+		potential = {
+			religion = totemism
+			}
+		allow = {
+			religion = totemism
+			months_of_ruling = 300 # 12 * 25
+			NOT = { has_country_flag = totem_sac_ruler }
+		}
+
+
+		effect = {
+			country_event = { 
+   				id = totemist_ruler_death.1
+    				days = 0
+    				tooltip = totemist_ruler_sac_tooltip
+				}
+			set_country_flag = totem_sac_ruler
+			
+		} # effect end
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+}
